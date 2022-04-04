@@ -75,13 +75,11 @@ function fecharPedido () {
     sobremesa = document.querySelector(".sselecionado").id;
     let total = Number(document.querySelector(".pselecionado").querySelector(".preco").id) + Number(document.querySelector(".bselecionado").querySelector(".preco").id) + Number(document.querySelector(".sselecionado").querySelector(".preco").id);
 
-    let parte01 = "Olá, gostaria de fazer o pedido: ";
-    let parte02 = "  Prato: " + prato + " ";
-    let parte03 = "/ Bebida: " + bebida + " ";
-    let parte04 = "/ Sobremesa: " + sobremesa + " ";
-    let parte05 = "/ TOTAL: R$ " + total.toFixed(2);
-    
-    mensagem =  parte01 + parte02 + parte03 + parte04 + parte05;
+    const mensagem = `Olá, gostaria de fazer o pedido:
+    Prato: ${[prato]}
+    Bebida: ${[bebida]} 
+    Sobremesa: ${[sobremesa]}
+    TOTAL: R$ ${[total.toFixed(2)]}`
 
 window.open("https://wa.me/?text="+ mensagem)
   }
