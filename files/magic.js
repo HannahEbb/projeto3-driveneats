@@ -76,10 +76,10 @@ function fecharPedido () {
     let total = Number(document.querySelector(".pselecionado").querySelector(".preco").id) + Number(document.querySelector(".bselecionado").querySelector(".preco").id) + Number(document.querySelector(".sselecionado").querySelector(".preco").id);
 
     const mensagem = `Olá, gostaria de fazer o pedido:
-    Prato: ${[prato]}
-    Bebida: ${[bebida]} 
-    Sobremesa: ${[sobremesa]}
-    TOTAL: R$ ${[total.toFixed(2)]}`
+     Prato: ${[prato]}
+    / Bebida: ${[bebida]} 
+    / Sobremesa: ${[sobremesa]}
+    / TOTAL: R$ ${[total.toFixed(2)]}`
 
 window.open("https://wa.me/?text="+ mensagem)
   }
