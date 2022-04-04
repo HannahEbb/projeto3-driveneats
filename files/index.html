@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+
+    <link href="/files/reset.css" rel="stylesheet" />
+    <link href="/files/styles.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <p>DrivenEats</p>
+        <h3>Sua comida em 6 minutos</h3>
+    </div>
+
+    <div class="prato">
+        <p>Primeiro, seu prato</p>
+
+        <div class="scrollitems">
+
+            <div onclick="selecionarPrato(this)" class="item" id="Completão veggie">
+                <img src="/media/completao-vegan.jpeg">
+                <p>Completão veggie</p>
+                <h3>Acompanha salada</h3>
+                <h4 class="preco" id="15.90">R$ 15,90</h4>
+            </div>
+
+            <div onclick="selecionarPrato(this)" class="item" id="Monstrão veggie">
+                <img src="/media/monstrao-vegan.jpeg">
+                <p>Monstrão veggie</p>
+                <h3>Acompanha salada</h3>
+                <h4 class="preco" id="16.90">R$ 16,90</h4>
+            </div>
+
+            <div onclick="selecionarPrato(this)" class="item" id="Feijoadona veggie">
+                <img src="/media/feijoada-vegan.jpeg">
+                <p>Feijoadona veggie</p>
+                <h3>Acompanha salada</h3>
+                <h4 class="preco" id="18.90">R$ 18,90</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bebida">
+        <p>Agora, sua bebida</p>
+
+        <div class="scrollitems">
+
+            <div onclick="selecionarBebida(this)" class="item" id="Wewi cola">
+                <img src="/media/wewi-cola.webp">
+                <p>Wewi cola</p>
+                <h3>Lata 350ml</h3>
+                <h4 class="preco" id="5.90">R$ 5,90</h4>
+            </div>
+
+            <div onclick="selecionarBebida(this)" class="item" id="Wewi guaraná">
+                <img src="/media/wewi-guarana.webp">
+                <p>Wewi guaraná</p>
+                <h3>Lata 350ml</h3>
+                <h4 class="preco" id="5.90">R$ 5,90</h4>
+            </div>
+
+            <div onclick="selecionarBebida(this)" class="item" id="Água com gás">
+                <img src="/media/agua-com-gas.webp">
+                <p>Água com gás</p>
+                <h3>Garrafa 350ml</h3>
+                <h4 class="preco" id="3.90">R$ 3,90</h4>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="sobremesa">
+        <p>Por fim, sua sobremesa</p>
+
+        <div class="scrollitems">
+
+            <div onclick="selecionarSobremesa(this)" class="item" id="Panqueca doce">
+                <img src="/media/panqueca-doce-vegan.jpeg">
+                <p>Panqueca doce vegana</p>
+                <h3>Porção individual</h3>
+                <h4 class="preco" id="7.90">R$ 7,90</h4>
+            </div>
+
+            <div onclick="selecionarSobremesa(this)" class="item" id="Tortinha de chocolate">
+                <img src="/media/tortinha-chocolate-vegan.webp">
+                <p>Tortinha de chocolate vegana</p>
+                <h3>Unidade</h3>
+                <h4 class="preco" id="6.90">R$ 6,90</h4>
+            </div>
+
+            <div onclick="selecionarSobremesa(this)" class="item" id="Trufa">
+                <img src="/media/trufa-vegan.jpeg">
+                <p>Trufa vegana</p>
+                <h3>Unidade</h3>
+                <h4 class="preco" id="5.90">R$ 5,90</h4>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="fecharpedido">
+        <div onclick="fecharPedido()" class="botao inativo">
+        <h3>Selecione os 3 itens para fechar o pedido</h3>
+        </div>
+    </div>
+    <script src="magic.js"></script>
+</body>
+</html>
